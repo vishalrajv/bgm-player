@@ -38,3 +38,4 @@ static/sounds/*.m4a
 # Temporary
 temp/
 tmp/
+*.db
