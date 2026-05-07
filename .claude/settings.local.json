@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__resolve-library-id",
+      "WebSearch",
+      "mcp__sequential-thinking__sequentialthinking",
+      "Bash(python search.py \"entertainment music soundboard glassmorphism neon dark mode\" --design-system -p \"BGM Player Drama SFX\" -f markdown)",
+      "Bash(python search.py \"glassmorphism neon vibrant dark\" --domain style -n 5)",
+      "Bash(python search.py \"music entertainment app\" --domain color -n 5)",
+      "Bash(python search.py \"audio player playback keyboard interaction\" --domain ux -n 5)",
+      "Bash(python search.py \"keyboard shortcuts audio controls hotkeys\" --domain ux -n 5)",
+      "Bash(python search.py \"glassmorphism dark theme\" --domain style -n 5)",
+      "Bash(python search.py \"cyberpunk futuristic\" --domain color -n 5)",
+      "Bash(python search.py \"emotion feelings color psychology\" --domain color -n 5)",
+      "mcp__context7__query-docs",
+      "Bash(pip show:*)"
+    ]
+  }
+}

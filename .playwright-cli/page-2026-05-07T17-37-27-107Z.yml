@@ -1,0 +1,213 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: 🎭
+      - heading "Drama BGM Player" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Press any key to trigger emotional SFX in real-time
+    - generic [ref=e8]:
+      - generic [ref=e11]: Click anywhere or press a key to activate audio
+      - button "Help" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]: 🔊 Master Volume
+      - generic [ref=e19]:
+        - slider "🔊 Master Volume" [ref=e20]: "80"
+        - generic [ref=e21]: 80%
+    - generic [ref=e22]:
+      - generic [ref=e23]: 🎵 Max Simultaneous
+      - combobox "🎵 Max Simultaneous" [ref=e24] [cursor=pointer]:
+        - option "1"
+        - option "3"
+        - option "5" [selected]
+        - option "10"
+        - option "∞"
+    - generic [ref=e25]:
+      - button "Reset Bindings" [ref=e26] [cursor=pointer]:
+        - img [ref=e27]
+        - text: Reset Bindings
+      - button "Export" [ref=e30] [cursor=pointer]:
+        - img [ref=e31]
+        - text: Export
+  - generic [ref=e34]:
+    - heading "Emotion Color Guide" [level=3] [ref=e35]
+    - generic [ref=e128]:
+      - listitem [ref=e129]:
+        - generic [ref=e131]: Comedy
+      - listitem [ref=e132]:
+        - generic [ref=e134]: Happy
+      - listitem [ref=e135]:
+        - generic [ref=e137]: Neutral
+      - listitem [ref=e138]:
+        - generic [ref=e140]: Sad
+      - listitem [ref=e141]:
+        - generic [ref=e143]: Suspense
+      - listitem [ref=e144]:
+        - generic [ref=e146]: Tension
+  - generic [ref=e36]:
+    - heading "✨ Press Keys to Play SFX" [level=2] [ref=e37]
+    - generic [ref=e38]:
+      - generic [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]: Q
+        - generic [ref=e147]: neutral pad
+        - generic [ref=e41]: Neutral
+      - generic [ref=e42] [cursor=pointer]:
+        - generic [ref=e43]: W
+        - generic [ref=e148]: neutral pad
+        - generic [ref=e44]: Neutral
+      - generic [ref=e45] [cursor=pointer]:
+        - generic [ref=e46]: E
+        - generic [ref=e149]: neutral pad
+        - generic [ref=e47]: Neutral
+      - generic [ref=e48] [cursor=pointer]:
+        - generic [ref=e49]: R
+        - generic [ref=e150]: neutral drone
+        - generic [ref=e50]: Neutral
+      - generic [ref=e51] [cursor=pointer]:
+        - generic [ref=e52]: T
+        - generic [ref=e151]: neutral drone
+        - generic [ref=e53]: Neutral
+      - generic [ref=e54] [cursor=pointer]:
+        - generic [ref=e55]: "Y"
+        - generic [ref=e152]: suspense ambient
+        - generic [ref=e56]: Suspense
+      - generic [ref=e57] [cursor=pointer]:
+        - generic [ref=e58]: U
+        - generic [ref=e153]: suspense ambient
+        - generic [ref=e59]: Suspense
+      - generic [ref=e60] [cursor=pointer]:
+        - generic [ref=e61]: I
+        - generic [ref=e154]: suspense ambient
+        - generic [ref=e62]: Suspense
+      - generic [ref=e63] [cursor=pointer]:
+        - generic [ref=e64]: O
+        - generic [ref=e155]: suspense ambient
+        - generic [ref=e65]: Suspense
+      - generic [ref=e66] [cursor=pointer]:
+        - generic [ref=e67]: P
+        - generic [ref=e156]: happy tune
+        - generic [ref=e68]: Happy
+    - generic [ref=e69]:
+      - generic [ref=e70] [cursor=pointer]:
+        - generic [ref=e71]: A
+        - generic [ref=e157]: sad strings
+        - generic [ref=e72]: Sad
+      - generic [ref=e73] [cursor=pointer]:
+        - generic [ref=e74]: S
+        - generic [ref=e158]: sad piano
+        - generic [ref=e75]: Sad
+      - generic [ref=e76] [cursor=pointer]:
+        - generic [ref=e77]: D
+        - generic [ref=e159]: sad piano
+        - generic [ref=e78]: Sad
+      - generic [ref=e79] [cursor=pointer]:
+        - generic [ref=e80]: F
+        - generic [ref=e160]: sad cry
+        - generic [ref=e81]: Sad
+      - generic [ref=e82] [cursor=pointer]:
+        - generic [ref=e83]: G
+        - generic [ref=e161]: sad piano
+        - generic [ref=e84]: Sad
+      - generic [ref=e85] [cursor=pointer]:
+        - generic [ref=e86]: H
+        - generic [ref=e162]: heartbeat
+        - generic [ref=e87]: Tension
+      - generic [ref=e88] [cursor=pointer]:
+        - generic [ref=e89]: J
+        - generic [ref=e163]: tension crash
+        - generic [ref=e90]: Tension
+      - generic [ref=e91] [cursor=pointer]:
+        - generic [ref=e92]: K
+        - generic [ref=e164]: tension crash
+        - generic [ref=e93]: Tension
+      - generic [ref=e94] [cursor=pointer]:
+        - generic [ref=e95]: L
+        - generic [ref=e165]: happy bell
+        - generic [ref=e96]: Happy
+    - generic [ref=e97]:
+      - generic [ref=e98] [cursor=pointer]:
+        - generic [ref=e99]: Z
+        - generic [ref=e166]: comedy laugh
+        - generic [ref=e100]: Comedy
+      - generic [ref=e101] [cursor=pointer]:
+        - generic [ref=e102]: X
+        - generic [ref=e167]: comedy squeak
+        - generic [ref=e103]: Comedy
+      - generic [ref=e104] [cursor=pointer]:
+        - generic [ref=e105]: C
+        - generic [ref=e168]: comedy laugh
+        - generic [ref=e106]: Comedy
+      - generic [ref=e107] [cursor=pointer]:
+        - generic [ref=e108]: V
+        - generic [ref=e169]: neutral pad
+        - generic [ref=e109]: Neutral
+      - generic [ref=e110] [cursor=pointer]:
+        - generic [ref=e111]: B
+        - generic [ref=e170]: neutral drone
+        - generic [ref=e112]: Neutral
+      - generic [ref=e113] [cursor=pointer]:
+        - generic [ref=e114]: "N"
+        - generic [ref=e171]: happy chime
+        - generic [ref=e115]: Happy
+      - generic [ref=e116] [cursor=pointer]:
+        - generic [ref=e117]: M
+        - generic [ref=e172]: tension crash
+        - generic [ref=e118]: Tension
+  - generic [ref=e174]:
+    - heading "⚙️ Configure Key" [level=3] [ref=e175]
+    - paragraph [ref=e176]:
+      - text: "Customize key:"
+      - strong [ref=e177]: Q
+    - generic [ref=e178]:
+      - generic [ref=e179]: Emotion
+      - generic [ref=e180]:
+        - generic [ref=e183] [cursor=pointer]: Comedy
+        - generic [ref=e186] [cursor=pointer]: Happy
+        - generic [ref=e189] [cursor=pointer]: Neutral
+        - generic [ref=e192] [cursor=pointer]: Sad
+        - generic [ref=e195] [cursor=pointer]: Suspense
+        - generic [ref=e198] [cursor=pointer]: Tension
+    - generic [ref=e199]:
+      - generic [ref=e200]: Sound Effect
+      - generic [ref=e201]:
+        - combobox [ref=e202] [cursor=pointer]:
+          - option "-- Select sound --"
+          - option "comedy laugh"
+          - option "comedy squeak"
+          - option "happy bell"
+          - option "happy chime"
+          - option "happy tune"
+          - option "heartbeat"
+          - option "neutral drone"
+          - option "neutral pad" [selected]
+          - option "sad cry"
+          - option "sad piano"
+          - option "sad strings"
+          - option "suspense ambient"
+          - option "suspense drone"
+          - option "tension crash"
+        - generic [ref=e203]: Or select a sound from your library
+      - generic [ref=e205] [cursor=pointer]:
+        - img [ref=e206]
+        - generic [ref=e209]: Click to upload new sound
+    - generic [ref=e210]:
+      - generic [ref=e211]: Custom Label
+      - textbox "e.g., Evil Laugh" [ref=e212]: Neutral Pad
+      - generic [ref=e213]: "Optional: Override the default sound label"
+    - generic [ref=e214]:
+      - button "Cancel" [ref=e215] [cursor=pointer]
+      - button "Clear Binding" [ref=e216] [cursor=pointer]
+      - button "Save & Apply" [ref=e217] [cursor=pointer]
+  - generic [ref=e119]:
+    - heading "🎵 Currently Playing" [level=3] [ref=e120]
+    - paragraph [ref=e122]: No sounds playing. Press a key to start!
+  - text: ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸
+  - contentinfo [ref=e123]:
+    - paragraph [ref=e124]: 🎭 Drama BGM Player — Local SFX Keyboard Controller
+    - paragraph [ref=e125]:
+      - text: Running on
+      - link "localhost" [ref=e126] [cursor=pointer]:
+        - /url: "http://localhost:"
+      - text: — Add your own SFX files to the
+      - code [ref=e127]: static/sounds/
+      - text: folder

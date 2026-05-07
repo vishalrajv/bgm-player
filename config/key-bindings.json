@@ -1,0 +1,180 @@
+{
+  "description": "Clustered by hand dominance: right-hand emotions (Tension, Suspense, Happy) on right side; left-hand emotions (Comedy, Sad, Neutral) on left side.",
+  "emotions": {
+    "comedy": {
+      "color": "#EC4899",
+      "description": "Funny, playful situations",
+      "glow": "#FDF2F8",
+      "name": "Comedy"
+    },
+    "happy": {
+      "color": "#EAB308",
+      "description": "Joyful, uplifting scenes",
+      "glow": "#FEFCE8",
+      "name": "Happy"
+    },
+    "neutral": {
+      "color": "#22C55E",
+      "description": "Ambient background sounds",
+      "glow": "#F0FDF4",
+      "name": "Neutral"
+    },
+    "sad": {
+      "color": "#06B6D4",
+      "description": "Emotional, melancholic moments",
+      "glow": "#ECFEFF",
+      "name": "Sad"
+    },
+    "suspense": {
+      "color": "#8B5CF6",
+      "description": "Mysterious, uncertain moments",
+      "glow": "#F5F3FF",
+      "name": "Suspense"
+    },
+    "tension": {
+      "color": "#EF4444",
+      "description": "Builds suspense and urgency",
+      "glow": "#FEF2F2",
+      "name": "Tension"
+    }
+  },
+  "globalSettings": {
+    "keyboardLayout": "qwerty",
+    "masterVolume": 0.8,
+    "polyphony": 5
+  },
+  "keyBindings": {
+    "a": {
+      "emotion": "sad",
+      "label": "Sad Strings",
+      "sound": "sad_strings"
+    },
+    "b": {
+      "emotion": "neutral",
+      "label": "Neutral Drone",
+      "sound": "neutral_drone"
+    },
+    "c": {
+      "emotion": "comedy",
+      "label": "Comedy Laugh",
+      "sound": "comedy_laugh"
+    },
+    "d": {
+      "emotion": "sad",
+      "label": "Sad Piano",
+      "sound": "sad_piano"
+    },
+    "e": {
+      "emotion": "neutral",
+      "label": "Neutral Pad",
+      "sound": "neutral_pad"
+    },
+    "f": {
+      "emotion": "sad",
+      "label": "Sad Cry",
+      "sound": "sad_cry"
+    },
+    "g": {
+      "emotion": "sad",
+      "label": "Sad Piano",
+      "sound": "sad_piano"
+    },
+    "h": {
+      "emotion": "tension",
+      "label": "Heartbeat",
+      "sound": "heartbeat"
+    },
+    "i": {
+      "emotion": "suspense",
+      "label": "Suspense Ambient",
+      "sound": "suspense_ambient"
+    },
+    "j": {
+      "emotion": "tension",
+      "label": "Tension Crash",
+      "sound": "tension_crash"
+    },
+    "k": {
+      "emotion": "tension",
+      "label": "Tension Crash",
+      "sound": "tension_crash"
+    },
+    "l": {
+      "emotion": "happy",
+      "label": "Happy Bell",
+      "sound": "happy_bell"
+    },
+    "m": {
+      "emotion": "tension",
+      "label": "Tension Crash",
+      "sound": "tension_crash"
+    },
+    "n": {
+      "emotion": "happy",
+      "label": "Happy Chime",
+      "sound": "happy_chime"
+    },
+    "o": {
+      "emotion": "suspense",
+      "label": "Suspense Ambient",
+      "sound": "suspense_ambient"
+    },
+    "p": {
+      "emotion": "happy",
+      "label": "Happy Tune",
+      "sound": "happy_tune"
+    },
+    "q": {
+      "emotion": "neutral",
+      "sound": "SemiTruckHorn_S08IN_866",
+      "label": "Neutral Pad"
+    },
+    "r": {
+      "emotion": "neutral",
+      "label": "Neutral Drone",
+      "sound": "neutral_drone"
+    },
+    "s": {
+      "emotion": "sad",
+      "label": "Sad Piano",
+      "sound": "sad_piano"
+    },
+    "t": {
+      "emotion": "neutral",
+      "label": "Neutral Drone",
+      "sound": "neutral_drone"
+    },
+    "u": {
+      "emotion": "suspense",
+      "label": "Suspense Ambient",
+      "sound": "suspense_ambient"
+    },
+    "v": {
+      "emotion": "neutral",
+      "label": "Neutral Pad",
+      "sound": "neutral_pad"
+    },
+    "w": {
+      "emotion": "neutral",
+      "label": "Neutral Pad",
+      "sound": "neutral_pad"
+    },
+    "x": {
+      "emotion": "comedy",
+      "label": "Comedy Squeak",
+      "sound": "comedy_squeak"
+    },
+    "y": {
+      "emotion": "suspense",
+      "label": "Suspense Ambient",
+      "sound": "suspense_ambient"
+    },
+    "z": {
+      "emotion": "comedy",
+      "label": "Comedy Laugh",
+      "sound": "comedy_laugh"
+    }
+  },
+  "title": "Drama BGM Player - Key Bindings Configuration",
+  "version": "1.0.0"
+}

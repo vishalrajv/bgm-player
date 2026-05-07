@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+*.egg-info/
+dist/
+build/
+
+# Flask
+instance/
+.webassets-cache
+
+# OS
+.DS_Store
+Thumbs.db
+*.log
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# User data (not committed)
+static/sounds/*.mp3
+static/sounds/*.wav
+static/sounds/*.ogg
+static/sounds/*.m4a
+
+# Generated
+*.exe
+
+# Temporary
+temp/
+tmp/

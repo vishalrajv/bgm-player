@@ -1,0 +1,128 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: 🎭
+      - heading "Drama BGM Player" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Press any key to trigger emotional SFX in real-time
+    - generic [ref=e8]:
+      - generic [ref=e11]: Initializing Audio...
+      - button "Help" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]: 🔊 Master Volume
+      - generic [ref=e19]:
+        - slider "🔊 Master Volume" [ref=e20]: "80"
+        - generic [ref=e21]: 80%
+    - generic [ref=e22]:
+      - generic [ref=e23]: 🎵 Max Simultaneous
+      - combobox "🎵 Max Simultaneous" [ref=e24] [cursor=pointer]:
+        - option "1"
+        - option "3"
+        - option "5" [selected]
+        - option "10"
+        - option "∞"
+    - generic [ref=e25]:
+      - button "Reset Bindings" [ref=e26] [cursor=pointer]:
+        - img [ref=e27]
+        - text: Reset Bindings
+      - button "Export" [ref=e30] [cursor=pointer]:
+        - img [ref=e31]
+        - text: Export
+  - heading "Emotion Color Guide" [level=3] [ref=e35]
+  - generic [ref=e36]:
+    - heading "✨ Press Keys to Play SFX" [level=2] [ref=e37]
+    - generic [ref=e38]:
+      - generic [ref=e39] [cursor=pointer]:
+        - generic [ref=e40]: Q
+        - generic [ref=e41]: Suspense
+      - generic [ref=e42] [cursor=pointer]:
+        - generic [ref=e43]: W
+        - generic [ref=e44]: Tension
+      - generic [ref=e45] [cursor=pointer]:
+        - generic [ref=e46]: E
+        - generic [ref=e47]: Happy
+      - generic [ref=e48] [cursor=pointer]:
+        - generic [ref=e49]: R
+        - generic [ref=e50]: Comedy
+      - generic [ref=e51] [cursor=pointer]:
+        - generic [ref=e52]: T
+        - generic [ref=e53]: Sad
+      - generic [ref=e54] [cursor=pointer]:
+        - generic [ref=e55]: "Y"
+        - generic [ref=e56]: Neutral
+      - generic [ref=e57] [cursor=pointer]:
+        - generic [ref=e58]: U
+        - generic [ref=e59]: Tension
+      - generic [ref=e60] [cursor=pointer]:
+        - generic [ref=e61]: I
+        - generic [ref=e62]: Suspense
+      - generic [ref=e63] [cursor=pointer]:
+        - generic [ref=e64]: O
+        - generic [ref=e65]: Happy
+      - generic [ref=e66] [cursor=pointer]:
+        - generic [ref=e67]: P
+        - generic [ref=e68]: Comedy
+    - generic [ref=e69]:
+      - generic [ref=e70] [cursor=pointer]:
+        - generic [ref=e71]: A
+        - generic [ref=e72]: Sad
+      - generic [ref=e73] [cursor=pointer]:
+        - generic [ref=e74]: S
+        - generic [ref=e75]: Tension
+      - generic [ref=e76] [cursor=pointer]:
+        - generic [ref=e77]: D
+        - generic [ref=e78]: Suspense
+      - generic [ref=e79] [cursor=pointer]:
+        - generic [ref=e80]: F
+        - generic [ref=e81]: Happy
+      - generic [ref=e82] [cursor=pointer]:
+        - generic [ref=e83]: G
+        - generic [ref=e84]: Comedy
+      - generic [ref=e85] [cursor=pointer]:
+        - generic [ref=e86]: H
+        - generic [ref=e87]: Neutral
+      - generic [ref=e88] [cursor=pointer]:
+        - generic [ref=e89]: J
+        - generic [ref=e90]: Tension
+      - generic [ref=e91] [cursor=pointer]:
+        - generic [ref=e92]: K
+        - generic [ref=e93]: Sad
+      - generic [ref=e94] [cursor=pointer]:
+        - generic [ref=e95]: L
+        - generic [ref=e96]: Happy
+    - generic [ref=e97]:
+      - generic [ref=e98] [cursor=pointer]:
+        - generic [ref=e99]: Z
+        - generic [ref=e100]: Suspense
+      - generic [ref=e101] [cursor=pointer]:
+        - generic [ref=e102]: X
+        - generic [ref=e103]: Tension
+      - generic [ref=e104] [cursor=pointer]:
+        - generic [ref=e105]: C
+        - generic [ref=e106]: Comedy
+      - generic [ref=e107] [cursor=pointer]:
+        - generic [ref=e108]: V
+        - generic [ref=e109]: Happy
+      - generic [ref=e110] [cursor=pointer]:
+        - generic [ref=e111]: B
+        - generic [ref=e112]: Sad
+      - generic [ref=e113] [cursor=pointer]:
+        - generic [ref=e114]: "N"
+        - generic [ref=e115]: Neutral
+      - generic [ref=e116] [cursor=pointer]:
+        - generic [ref=e117]: M
+        - generic [ref=e118]: Tension
+  - generic [ref=e119]:
+    - heading "🎵 Currently Playing" [level=3] [ref=e120]
+    - paragraph [ref=e122]: No sounds playing. Press a key to start!
+  - text: ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸
+  - contentinfo [ref=e123]:
+    - paragraph [ref=e124]: 🎭 Drama BGM Player — Local SFX Keyboard Controller
+    - paragraph [ref=e125]:
+      - text: Running on
+      - link "localhost" [ref=e126] [cursor=pointer]:
+        - /url: "http://localhost:"
+      - text: — Add your own SFX files to the
+      - code [ref=e127]: static/sounds/
+      - text: folder
