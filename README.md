@@ -34,7 +34,11 @@ A **local web application** that plays sound effects triggered by keyboard press
 ### Option 1: One-Command Setup (Recommended)
 
 ```bash
-# Clone or download the project, then:
+# Clone the project:
+git clone https://github.com/vishalrajv/bgm-player.git
+cd bgm-player
+
+# Install dependencies and run:
 pip install -r requirements.txt
 python app.py
 ```

@@ -13,6 +13,7 @@ class BGMPlayer {
         this.isAudioInitialized = false;
         this.maxPolyphony = 5;
         this.masterVolume = 0.8;
+        this.isSaving = false;
 
         // Key config modal state
         this.configModalOpen = false;
@@ -674,11 +675,31 @@ class BGMPlayer {
     }
 
     async saveConfig() {
-        await fetch('/api/config', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(this.config)
-        });
+        if (this.isSaving) {
+            console.warn('Save already in progress, skipping...');
+            return;
+        }
+
+        this.isSaving = true;
+        try {
+            const response = await fetch('/api/config', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify(this.config)
+            });
+
+            if (!response.ok) {
+                const err = await response.json();
+                throw new Error(err.message || 'Failed to save configuration');
+            }
+            
+            console.log('Configuration saved successfully');
+        } catch (error) {
+            console.error('Error saving config:', error);
+            this.showToast('Failed to save settings to server', 'error');
+        } finally {
+            this.isSaving = false;
+        }
     }
 
     exportConfig() {

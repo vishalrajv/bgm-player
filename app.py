@@ -34,10 +34,30 @@ def load_key_bindings():
 
 
 def save_key_bindings(config):
-    """Save key bindings configuration"""
+    """Save key bindings configuration atomically to prevent truncation"""
     config_path = CONFIG_DIR / 'key-bindings.json'
-    with open(config_path, 'w', encoding='utf-8') as f:
-        json.dump(config, f, indent=2, ensure_ascii=False)
+    temp_path = config_path.with_suffix('.tmp')
+    
+    try:
+        with open(temp_path, 'w', encoding='utf-8') as f:
+            json.dump(config, f, indent=2, ensure_ascii=False)
+        
+        # Atomically replace the old file with the new one
+        if os.name == 'nt' and config_path.exists():
+            # On Windows, os.replace might fail if the file is open
+            try:
+                os.replace(str(temp_path), str(config_path))
+            except OSError:
+                if config_path.exists():
+                    os.remove(str(config_path))
+                os.rename(str(temp_path), str(config_path))
+        else:
+            os.replace(str(temp_path), str(config_path))
+            
+    except Exception as e:
+        if temp_path.exists():
+            os.remove(temp_path)
+        raise e
 
 
 @app.route('/')

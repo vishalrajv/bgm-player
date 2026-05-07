@@ -17,8 +17,8 @@ Follow these steps to get your BGM Player running locally.
 
 Download the ZIP from the repo or:
 ```bash
-git clone <your-repo-url>
-cd BGM-PLAYER
+git clone https://github.com/vishalrajv/bgm-player.git
+cd bgm-player
 ```
 
 ### 2. Install Flask

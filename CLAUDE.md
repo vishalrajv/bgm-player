@@ -183,8 +183,8 @@ Test coverage: 14 UI/functional checks (see `Task #4` history for full results)
 
 | Issue | Cause | Workaround |
 |-------|-------|------------|
-| UnicodeEncodeError in Windows console | `print()` with emoji → cp1252 | Use emoji-free strings (fixed in `app.py`) |
-| Config file truncation on save | POST endpoint saves `this.config` (partial state) | Edit JSON file directly for now; restart server |
+| UnicodeEncodeError in Windows console | `print()` with emoji → cp1252 | Fixed in `app.py` |
+| Config file truncation on save | Concurrent saves or non-atomic writes | Fixed with atomic writes in backend + `isSaving` lock in JS |
 | Port 5000 sometimes busy | Previous instance not killed | App auto-falls back to port 8888 |
 | No sounds without files | `static/sounds/` empty by default | Add MP3/WAV files matching key binding `sound` names |
 
