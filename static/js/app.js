@@ -140,6 +140,7 @@ class BGMPlayer {
             source,
             gain: gainNode,
             name: soundName,
+            key: keyCode.toUpperCase(),
             startTime: Date.now()
         };
         this.activeSounds.push(soundEntry);
@@ -177,7 +178,7 @@ class BGMPlayer {
                     color: var(--color-${emotion});
                 ">
                     <span class="sound-name">${entry.name.replace(/_/g, ' ')}</span>
-                    <span class="sound-key">${entry.name.charAt(0).toUpperCase()}</span>
+                    <span class="sound-key">${entry.key}</span>
                 </div>
             `;
         }).join('');
@@ -190,6 +191,8 @@ class BGMPlayer {
     }
 
     renderKeyboard() {
+        if (!this.config || !this.config.keyBindings) return;
+
         const keys = ['qwertyuiop', 'asdfghjkl', 'zxcvbnm'];
 
         keys.forEach((row, rowIdx) => {
@@ -201,15 +204,16 @@ class BGMPlayer {
                 if (!keyEl) return;
 
                 const binding = this.config.keyBindings?.[keyChar];
-                const keyHintEl = keyEl.querySelector('.key-hint');
                 if (binding) {
+                    keyEl.classList.remove('unbound');
                     keyEl.dataset.emotion = binding.emotion;
-                    document.getElementById(`label-${keyChar}`).textContent = binding.sound.replace(/_/g, ' ');
-                    keyHintEl.textContent = this.config.emotions[binding.emotion]?.name || binding.emotion;
+
+                    // Priority: Custom Label > Formatted Sound Name
+                    const displayText = binding.label || binding.sound.replace(/_/g, ' ');
+                    document.getElementById(`label-${keyChar}`).textContent = displayText;
                 } else {
                     keyEl.classList.add('unbound');
                     keyEl.dataset.emotion = 'neutral';
-                    keyHintEl.textContent = 'Unbound';
                 }
             });
         });
@@ -266,6 +270,11 @@ class BGMPlayer {
             this.showToast('Configuration exported to console (F12)', 'info');
         });
 
+        // Stop All button
+        document.getElementById('stop-all').addEventListener('click', () => {
+            this.stopAll();
+        });
+
         // Help button
         document.getElementById('help-btn').addEventListener('click', () => {
             document.getElementById('help-panel').classList.remove('hidden');
@@ -314,9 +323,24 @@ class BGMPlayer {
     }
 
     handleKeyDown(e) {
+        // Ignore if typing in an input field
+        if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') {
+            return;
+        }
+
+        // Don't trigger sounds while config modal is open
+        if (this.configModalOpen) return;
         if (e.repeat) return;
 
         const key = e.key.toLowerCase();
+
+        // Space bar stops all playing sounds
+        if (key === ' ') {
+            e.preventDefault();
+            this.stopAll();
+            return;
+        }
+
         const binding = this.getSoundForKey(key);
 
         if (binding && this.sounds.has(binding.sound)) {
@@ -327,6 +351,26 @@ class BGMPlayer {
 
     handleKeyUp(e) {
         // Future: implement sound release/fadeout for sustained sounds
+    }
+
+    stopAll() {
+        if (this.activeSounds.length === 0) {
+            this.showToast('No sounds playing', 'info');
+            return;
+        }
+
+        this.activeSounds.forEach(entry => {
+            try {
+                entry.source.stop();
+            } catch (e) {
+                // Already stopped — ignore
+            }
+            entry.gain.disconnect();
+        });
+
+        this.activeSounds = [];
+        this.updateActiveSoundsDisplay();
+        this.showToast('All sounds stopped', 'info');
     }
 
     /* ============================================

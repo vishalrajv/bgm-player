@@ -367,6 +367,17 @@ body {
     box-shadow: 0 0 15px var(--color-tension);
 }
 
+.btn-stop {
+    background: rgba(239, 68, 68, 0.15);
+    color: var(--color-tension);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+}
+
+.btn-stop:hover {
+    background: rgba(239, 68, 68, 0.3);
+    box-shadow: 0 0 15px var(--color-tension);
+}
+
 /* --- Emotion Legend --- */
 .emotion-legend {
     padding: var(--space-md) var(--space-lg);
@@ -430,14 +441,16 @@ body {
 
 .key {
     position: relative;
-    width: 64px;
-    height: 64px;
-    min-width: 64px;
-    min-height: 64px;
+    width: 72px;
+    height: 72px;
+    min-width: 72px;
+    min-height: 72px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 2px;
+    padding: 4px 6px;
     background: rgba(0, 0, 0, 0.4);
     border: 2px solid transparent;
     border-radius: var(--radius-md);
@@ -526,240 +539,32 @@ body {
 
 .key-label {
     font-family: var(--font-heading);
-    font-size: 1.5rem;
+    font-size: 1.1rem;
     color: var(--color-foreground);
+    line-height: 1;
 }
 
 .key-sound {
-    font-size: 0.65rem;
-    color: var(--color-muted-foreground, #94A3B8);
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
-    max-width: 90%;
+    font-size: 0.7rem;
+    color: var(--color-foreground);
+    max-width: 100%;
     overflow: hidden;
     text-overflow: ellipsis;
-    white-space: nowrap;
+    white-space: normal;
+    word-wrap: break-word;
+    hyphens: auto;
     text-align: center;
+    font-weight: 500;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+    line-height: 1.2;
 }
 
 .key-hint {
-    font-size: 0.65rem;
-    color: var(--color-muted);
+    font-size: 0.6rem;
+    color: var(--color-muted-foreground, #94A3B8);
     margin-top: 2px;
-}
-
-/* --- Rebind Panel --- */
-/* --- Key Configuration Modal --- */
-.config-modal {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.6);
-    backdrop-filter: blur(8px);
-    z-index: var(--z-modal);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.config-modal.hidden {
-    display: none;
-}
-
-.config-modal-content {
-    background: var(--color-surface);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-lg);
-    padding: var(--space-xl);
-    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
-    animation: modal-appear 200ms var(--ease-out);
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-md);
-    max-width: 400px;
-    width: 90vw;
-    max-height: 90vh;
-    overflow-y: auto;
-}
-
-@keyframes modal-appear {
-    from {
-        opacity: 0;
-        transform: scale(0.95) translateY(10px);
-    }
-    to {
-        opacity: 1;
-        transform: scale(1) translateY(0);
-    }
-}
-
-.modal-title {
-    font-family: var(--font-heading);
-    font-size: 1.35rem;
-    margin-bottom: var(--space-xs);
-    color: var(--color-foreground);
-}
-
-.modal-subtitle {
-    color: var(--color-muted);
-    font-size: 0.9rem;
-    margin-bottom: var(--space-md);
-}
-
-.modal-subtitle strong {
-    color: var(--color-accent);
-}
-
-.config-section {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-sm);
-    margin-bottom: var(--space-md);
-}
-
-.config-label {
-    font-weight: 500;
-    font-size: 0.87rem;
-    color: var(--color-foreground);
     text-transform: uppercase;
-    letter-spacing: 0.05em;
-}
-
-.emotion-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: var(--space-sm);
-}
-
-.emotion-option {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    padding: var(--space-sm);
-    background: rgba(255, 255, 255, 0.03);
-    border: 2px solid transparent;
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    transition: all 120ms var(--ease-out);
-}
-
-.emotion-option:hover {
-    background: rgba(255, 255, 255, 0.08);
-    transform: translateY(-1px);
-}
-
-.emotion-option.selected {
-    border-color: var(--color-current);
-    background: rgba(255, 255, 255, 0.12);
-    box-shadow: 0 0 16px var(--glow-current);
-}
-
-.emotion-option .emotion-icon {
-    width: 28px;
-    height: 28px;
-    border-radius: 50%;
-    border: 2px solid var(--color-current);
-    box-shadow: 0 0 10px var(--glow-current);
-}
-
-.emotion-option .emotion-name {
-    font-size: 0.7rem;
-    color: var(--color-current);
-    font-weight: 500;
-}
-
-.sound-select-group {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
-}
-
-.sound-select-group select {
-    width: 100%;
-    padding: 10px 14px;
-}
-
-.config-hint {
-    font-size: 0.75rem;
-    color: var(--color-muted);
-    font-style: italic;
-}
-
-.upload-group {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-xs);
-    margin-top: var(--space-sm);
-}
-
-.upload-box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: var(--space-xs);
-    padding: var(--space-md);
-    border: 2px dashed var(--glass-border);
-    border-radius: var(--radius-md);
-    cursor: pointer;
-    color: var(--color-muted);
-    transition: all 150ms var(--ease-out);
-    text-align: center;
-    font-size: 0.85rem;
-}
-
-.upload-box:hover {
-    border-color: var(--color-accent);
-    background: rgba(34, 197, 94, 0.08);
-    color: var(--color-accent);
-}
-
-.upload-box.drag-over {
-    border-color: var(--color-accent);
-    background: rgba(34, 197, 94, 0.15);
-}
-
-.upload-box svg {
-    opacity: 0.7;
-}
-
-.upload-box.has-file {
-    border-style: solid;
-    border-color: var(--color-accent);
-    color: var(--color-accent);
-}
-
-.input {
-    width: 100%;
-    padding: 10px 14px;
-    background: rgba(255, 255, 255, 0.05);
-    border: 1px solid var(--glass-border);
-    border-radius: var(--radius-sm);
-    color: var(--color-foreground);
-    font-family: var(--font-body);
-    font-size: 0.9rem;
-    transition: border-color 150ms var(--ease-out);
-}
-
-.input:focus {
-    outline: none;
-    border-color: var(--color-accent);
-    box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.2);
-}
-
-.config-actions {
-    display: flex;
-    gap: var(--space-sm);
-    justify-content: flex-end;
-    margin-top: var(--space-md);
-    padding-top: var(--space-md);
-    border-top: 1px solid var(--glass-border);
-}
-
-.config-actions .btn {
-    min-width: 90px;
+    opacity: 0.8;
 }
 
 /* --- Rebind Panel --- */
@@ -1037,11 +842,22 @@ body {
 .active-sound {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     gap: var(--space-sm);
     padding: var(--space-sm) var(--space-md);
     border-radius: var(--radius-lg);
     font-size: 0.9rem;
     animation: sound-appear var(--duration-normal) var(--ease-out);
+}
+
+.sound-key {
+    background: var(--glass-bg-light);
+    border: 1px solid currentColor;
+    border-radius: var(--radius-md);
+    padding: 2px 8px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    opacity: 0.8;
 }
 
 @keyframes sound-appear {
@@ -1318,18 +1134,18 @@ body {
     }
 
     .key {
-        width: 48px;
-        height: 48px;
-        min-width: 48px;
-        min-height: 48px;
+        width: 56px;
+        height: 56px;
+        min-width: 56px;
+        min-height: 56px;
     }
 
     .key-label {
-        font-size: 1.25rem;
+        font-size: 0.95rem;
     }
 
     .key-sound {
-        font-size: 0.55rem;
+        font-size: 0.6rem;
     }
 
     .settings-bar {
@@ -1353,15 +1169,16 @@ body {
 
 @media (max-width: 480px) {
     .key {
-        width: 40px;
-        height: 40px;
-        min-width: 40px;
-        min-height: 40px;
+        width: 44px;
+        height: 44px;
+        min-width: 44px;
+        min-height: 44px;
         border-radius: var(--radius-sm);
+        padding: 2px 4px;
     }
 
     .key-label {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
 
     .key-sound, .key-hint {
