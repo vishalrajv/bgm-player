@@ -1,0 +1,73 @@
+- generic [ref=e2]:
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: 🎭
+      - heading "Drama BGM Player" [level=1] [ref=e6]
+    - paragraph [ref=e7]: Press any key to trigger emotional SFX in real-time
+    - generic [ref=e8]:
+      - generic [ref=e11]: Initializing Audio...
+      - button "Help" [ref=e12] [cursor=pointer]:
+        - img [ref=e13]
+  - generic [ref=e16]:
+    - generic [ref=e17]:
+      - generic [ref=e18]: 🔊 Master Volume
+      - generic [ref=e19]:
+        - slider "🔊 Master Volume" [ref=e20]: "80"
+        - generic [ref=e21]: 80%
+    - generic [ref=e22]:
+      - generic [ref=e23]: 🎵 Max Simultaneous
+      - combobox "🎵 Max Simultaneous" [ref=e24] [cursor=pointer]:
+        - option "1"
+        - option "3"
+        - option "5" [selected]
+        - option "10"
+        - option "∞"
+    - generic [ref=e25]:
+      - button "Reset Bindings" [ref=e26] [cursor=pointer]:
+        - img [ref=e27]
+        - text: Reset Bindings
+      - button "Export" [ref=e30] [cursor=pointer]:
+        - img [ref=e31]
+        - text: Export
+  - heading "Emotion Color Guide" [level=3] [ref=e35]
+  - generic [ref=e36]:
+    - heading "✨ Press Keys to Play SFX" [level=2] [ref=e37]
+    - generic [ref=e38]:
+      - generic [ref=e40] [cursor=pointer]: Q
+      - generic [ref=e42] [cursor=pointer]: W
+      - generic [ref=e44] [cursor=pointer]: E
+      - generic [ref=e46] [cursor=pointer]: R
+      - generic [ref=e48] [cursor=pointer]: T
+      - generic [ref=e50] [cursor=pointer]: "Y"
+      - generic [ref=e52] [cursor=pointer]: U
+      - generic [ref=e54] [cursor=pointer]: I
+      - generic [ref=e56] [cursor=pointer]: O
+      - generic [ref=e58] [cursor=pointer]: P
+    - generic [ref=e59]:
+      - generic [ref=e61] [cursor=pointer]: A
+      - generic [ref=e63] [cursor=pointer]: S
+      - generic [ref=e65] [cursor=pointer]: D
+      - generic [ref=e67] [cursor=pointer]: F
+      - generic [ref=e69] [cursor=pointer]: G
+      - generic [ref=e71] [cursor=pointer]: H
+      - generic [ref=e73] [cursor=pointer]: J
+      - generic [ref=e75] [cursor=pointer]: K
+      - generic [ref=e77] [cursor=pointer]: L
+    - generic [ref=e78]:
+      - generic [ref=e80] [cursor=pointer]: Z
+      - generic [ref=e82] [cursor=pointer]: X
+      - generic [ref=e84] [cursor=pointer]: C
+      - generic [ref=e86] [cursor=pointer]: V
+      - generic [ref=e88] [cursor=pointer]: B
+      - generic [ref=e90] [cursor=pointer]: "N"
+      - generic [ref=e92] [cursor=pointer]: M
+  - generic [ref=e93]:
+    - heading "🎵 Currently Playing" [level=3] [ref=e94]
+    - paragraph [ref=e96]: No sounds playing. Press a key to start!
+  - text: ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸ ▸
+  - contentinfo [ref=e97]:
+    - paragraph [ref=e98]: 🎭 Drama BGM Player — Local SFX Keyboard Controller
+    - paragraph [ref=e99]:
+      - text: Developed by
+      - strong [ref=e100]: Vishal Raj V
+      - text: — Senior Engineer
