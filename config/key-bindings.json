@@ -56,8 +56,8 @@
     },
     "c": {
       "emotion": "comedy",
-      "label": "Comedy Laugh",
-      "sound": "comedy_laugh"
+      "sound": "Hahaha_10_sec",
+      "label": "Long Laugh"
     },
     "d": {
       "emotion": "sad",
@@ -66,8 +66,8 @@
     },
     "e": {
       "emotion": "neutral",
-      "label": "Neutral Pad",
-      "sound": "neutral_pad"
+      "sound": "Punch_1",
+      "label": "Punch"
     },
     "f": {
       "emotion": "sad",
@@ -126,8 +126,8 @@
     },
     "q": {
       "emotion": "neutral",
-      "sound": "SemiTruckHorn_S08IN_866",
-      "label": "Neutral Pad"
+      "label": "Ahhh",
+      "sound": "ahh"
     },
     "r": {
       "emotion": "neutral",
@@ -146,8 +146,8 @@
     },
     "u": {
       "emotion": "suspense",
-      "label": "Suspense Ambient",
-      "sound": "suspense_ambient"
+      "label": "Suspense",
+      "sound": "Suspense_2"
     },
     "v": {
       "emotion": "neutral",
@@ -156,23 +156,23 @@
     },
     "w": {
       "emotion": "neutral",
-      "label": "Neutral Pad",
-      "sound": "neutral_pad"
+      "label": "Aleart",
+      "sound": "Alert"
     },
     "x": {
       "emotion": "comedy",
-      "label": "Comedy Squeak",
-      "sound": "comedy_squeak"
+      "sound": "vine_boom",
+      "label": "Boom"
     },
     "y": {
       "emotion": "suspense",
-      "label": "Suspense Ambient",
-      "sound": "suspense_ambient"
+      "label": "Sudden Suspense",
+      "sound": "Sudden_Suspense"
     },
     "z": {
       "emotion": "comedy",
-      "label": "Comedy Laugh",
-      "sound": "comedy_laugh"
+      "label": "Huhh",
+      "sound": "huh"
     }
   },
   "title": "Drama BGM Player - Key Bindings Configuration",
